@@ -18,9 +18,29 @@ nav ul li {
     display: inline-block;
 }
 
+nav a {
+	margin: 0 10px 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+
 main section {
     width: 33.333333333333333%;
 }
+
+main > .feature {
+    height: 200px;
+    background-image: url("../static/store.jpg"), url("../static/iphone.jpg");
+    background-repeat: no-repeat;
+    background-size: 33.3333333% auto, 33.33333% auto;
+    /*, url("../static/store.jpg");*/
+    /*background-repeat: no-repeat, no-repeat;*/
+    background-position: right center, center center;
+    /*background-blend-mode: overlay;*/
+}
+
+
 
 .feature {
     display: block;
@@ -47,32 +67,38 @@ nav,
     background-color: lightgray;
 }
 
-.feature section {
-    height: 600px;
-/*    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Steve_Jobs_with_the_Apple_iPad_no_logo_%28cropped%29.jpg"), url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Store%2C_Sydney.jpg");
-    background-repeat: no-repeat;
-    background-position: center center, center center;*/
+
+main section .column {
+	height: 300px;
+}
+main .center .column ul {
+	list-style-type: none
+}
+main .center .column ul li:before {
+	content: '✓ ';
 }
 
-feature section.left {
+
+.feature section.left {
     background-color: lightgray;
+    width: 33%;
 }
 
-feature section.left * {
-    width: 30%;
-    height: auto;
+.left img {
+    width: 33%;
 }
-.feature section.center {
+/*.feature section.center {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Steve_Jobs_with_the_Apple_iPad_no_logo_%28cropped%29.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    /*background-size: 175px auto;*/
+    background-size: 175px auto;
 }
 
 .feature section.right {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Store%2C_Sydney.jpg");
-    /*background-size: 175px auto;*/
+    background-size: 175px auto;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
+*/
