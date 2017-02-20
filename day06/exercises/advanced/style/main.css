@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    position: relative;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    color: #665344;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+main section {
+    width: 33.333333333333333%;
+}
+
+.feature {
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+footer,
+nav,
+.feature,
+.column {
+    margin: 5px 10px 5px;
+    padding: 10px 20px 10px;
+    background-color: lightgray;
+}
+
+.feature section {
+    height: 600px;
+/*    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Steve_Jobs_with_the_Apple_iPad_no_logo_%28cropped%29.jpg"), url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Store%2C_Sydney.jpg");
+    background-repeat: no-repeat;
+    background-position: center center, center center;*/
+}
+
+feature section.left {
+    background-color: lightgray;
+}
+
+feature section.left * {
+    width: 30%;
+    height: auto;
+}
+.feature section.center {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Steve_Jobs_with_the_Apple_iPad_no_logo_%28cropped%29.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size: 175px auto;*/
+}
+
+.feature section.right {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Store%2C_Sydney.jpg");
+    /*background-size: 175px auto;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
