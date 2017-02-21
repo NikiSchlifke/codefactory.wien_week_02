@@ -1,0 +1,9 @@
+
+.news {
+  background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+   background: url("https://codefactory.wien/totara/courses/css3/images/CodeFactory.png");
+}
