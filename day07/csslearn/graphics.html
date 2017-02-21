@@ -9,27 +9,27 @@
          
         .box {
             background: #f4f4f4;
-            border: 1px solid #bbbbbb;
+            border: 1px solid black;
             width: 200px;
             height: 200px;
             margin: 60px auto;
             position: relative;
         }
          
-        .box:before {
-            border: 1px solid white;
+        .box::before {
+            border: 1px solid red;
             content: '';
             width: 198px;
             height: 198px;
             position: absolute;
         }
          
-        .box:after {
+        .box::after {
             content: '';
             position: absolute;
             width: 196px;
             height: 196px;
-            border: 1px solid #bbbbbb;
+            border: 1px solid black;
             left: 1px; top: 1px;
         }
     </style>

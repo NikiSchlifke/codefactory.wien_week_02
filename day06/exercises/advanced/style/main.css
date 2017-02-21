@@ -67,6 +67,22 @@ nav,
     padding: 5px 10px 5px;
     background-color: lightgray;
 }
+.column {
+    position: relative;
+    border-style: solid;
+    border-color: black;
+}
+.column::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
 
 main section .column {
     height: 300px;
@@ -77,14 +93,13 @@ main .center .column ul {
 }
 
 main .center .column ul li:before {
-    content: '✓ ';
+    content: '✓';
 }
 
 .feature section.left {
     background-color: lightgray;
     width: 33%;
 }
-
 
 footer .left {
     text-align: left;
@@ -95,29 +110,12 @@ footer .right {
     text-align: right;
     width: 25%
 }
-.left img {
-    width: 33%;
-}
 
 footer .right img {
     height: 20px;
 }
 
-
-
-
-/*.feature section.center {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Steve_Jobs_with_the_Apple_iPad_no_logo_%28cropped%29.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 175px auto;
+.left img {
+    width: 33%;
 }
 
-.feature section.right {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Store%2C_Sydney.jpg");
-    background-size: 175px auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-*/
