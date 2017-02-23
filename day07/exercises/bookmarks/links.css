@@ -23,28 +23,48 @@ main section h3 {
 }
 
 main section {
-    transition-property: left
 }
 
-main section dd {
+.bookmark {
+    transition: all 0.15s ;
     position: relative;
-    float: left;
+}
+
+.bookmark:hover .thumbnail {
+    visibility: visible;
 }
 
 .thumbnail {
-	float: left;
-	position: relative;
-    width: 240px;
-    height: auto;
+    margin: 0;
+    position: absolute;
+    visibility: hidden;
+    height: 61.80339887498948vh;
+    width: : auto;
+    z-index: 999;
+    left: 0;
+    bottom: -61.80339887498948vh;
+    pointer-events : none;
+
 }
-.thumbnail img:hover {
-    position: relative;
+.thumbnail img {
+    margin: 0;
+    width: inherit;
+    height: inherit;    
+
+}
+
+/*.thumbnail img:hover {
+    position: absolute;
+    left: -50%;
+    top: -50%;
     width: 800px;
     z-index: 999;
 }
 
 .thumbnail img {
-	width: 240px;
-	height: auto;
+    visibility: hidden;
+    width: inherit;
+    height: inherit;
     transition: all 0.15s ease-in-out;
 }
+*/
